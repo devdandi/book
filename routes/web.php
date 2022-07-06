@@ -15,4 +15,13 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('index');
-});
+})->name('home');
+
+
+Route::get('/tentang', function () {
+    return view('about.index');
+})->name('about');
+
+Route::get('/buku', function () {
+    return view('book.index');
+})->name('book');
